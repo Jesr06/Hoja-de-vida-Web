@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu NSW ACT Foundation';
+}
+
+/*--Header--*/
+.container {
+    width: 100%;
+    height: 80vh;
+    background: #c31432;
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    background: linear-gradient(to right, #240b36, #c31432); 
+    background-size: cover;
+    background-position: center;
+}
+
+.container .cont__header-titulo {
+    text-align: center;
+}
+
+.container .cont__header-titulo p {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 1em 0;
+    color: #FFFF;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+}
+
+.container .enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.container .nav__logo {
+    height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFF;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active, li a:hover {
+    background: #ff1852;
+    transition: .5s;
+    border-radius: 20px;
+}
+
+.container .checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*--Body--*/
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    justify-self: center;
+    align-items: center;
+}
+
+/*Slider--*/
+.slider{
+    padding-top: 3.5rem;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    animation: cambio 10s infinite alternate linear;
+    width: 400%;
+}
+
+.slider li{
+    width: 100%;
+    height: 500px;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+      
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+      
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+      
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+/*--Section--*/
+.section {
+    text-align: center;
+    padding: 5rem 12rem;
+    height: auto;
+}
+
+.section .title_pasatiempos h3 {
+    padding: 1rem;
+    font-size: 60px;
+    font-weight: bold;
+    border-bottom: 6px solid #240b36;
+    width: 50%;
+    display: inline-block;
+}
+
+
+.section .contenido {
+    padding-top: 5rem;
+}
+
+.section .contenido p {
+    text-align: left;
+    font-size: 22px;
+}
+
+.section .contenido h4 {
+    text-align: left;
+    padding-top: 2rem;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.cont_int {
+    padding-top: 1rem;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.cont_img {
+    flex: 1;
+}
+
+.cont_text {
+    flex: 1;
+}
+
+.cont_img img {
+    width: 80%;
+    height: 250px;
+}
+
+.foto {
+    align-items: center;
+}
+
+.foto img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%
+}
+
+.title_hoja-vida {
+    background-color: #512152;
+}
+
+.title_hoja-vida h5 {
+    font-size: 24px;
+    color: #FFFF;
+    padding: 0.3rem;
+}
+
+.cont_text h5 {
+    font-size: 18px;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.cont_text-hj p {
+    padding: 1rem 2rem;
+}
+
+.contenido .cont_text-hj2{
+    padding: 1rem 2rem;
+}
+
+.contenido .cont_text-hj2 p {
+    font-size: 18px;
+}
+
+/*--Footer--*/
+.cont__footer {
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../img/background-footer.svg);
+    background-size: cover;
+    -webkit-mask:url(../img/background-footer.svg);
+    background: #642B73;
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73);
+    background: linear-gradient(to right, #C6426E, #642B73);
+    -webkit-mask-size: cover;
+}
+
+.cont__footer .footer__group1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 80px 0px;
+}
+
+.cont__footer .footer__group1 .box__footer figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont__footer .footer__group1 .box__footer img {
+    width: 200px;
+}
+
+.cont__footer .footer__group1 .box__footer h2 {
+    color: #FFFF;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.cont__footer .footer__group1 .box__footer p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.cont__footer .footer__group1 .Red-Social__footer a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #FFFF;
+    margin-right: 10px;
+    background-color: #512152;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.cont__footer .footer__group1 .Red-Social__footer a:hover {
+    color: #C6426E;
+} 
+
+.footer__group2 {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.footer__group2 p {
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.footer__group2 hr {
+    border: none;
+    height: 1px;
+    background-color: #ffffff;
+}
+
+/**--Responsible--**/
+@media screen and (max-width:800px){
+    /**--Header--**/
+    .container {
+        height: 60vh;
+    }
+    
+    .container .cont__header-titulo p {
+        font-size: 60px;
+        font-weight: bold;
+        margin: 1em 0;
+        color: #FFFF;
+    }
+
+    .container .nav__logo {
+        height: 60px;
+    }
+    
+    nav {
+        height: 80px;
+        width: 100%;
+    }
+
+    .container .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #c31432;
+        background: -webkit-linear-gradient(to right, #240b36, #c31432);
+        background: linear-gradient(to right, #240b36, #c31432); 
+        top: 90px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;    
+        z-index: 1;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(255, 121, 204);
+    }
+
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    /**--Body--**/
+    .section {
+        text-align: center;
+        padding: 5rem 2rem;
+        height: auto;
+    }
+
+    .section .title_pasatiempos h3 {
+        padding: 1rem;
+        font-size: 40px;
+        border-bottom: 4px solid #240b36;
+        width: 50%;
+    } 
+
+    .slider {
+        margin-top: -6rem;
+    }
+
+    .slider, .slider ul, .slider img{
+        height: 400px;
+        position: relative;
+    }
+
+    @keyframes cambio{
+        0%{margin-left: 100%;}
+        20%{margin-left: 100%;}
+          
+        25%{margin-left: 0;}
+        45%{margin-left: 0;}
+          
+        50%{margin-left: -100%;}
+        70%{margin-left: -100%;}
+          
+        75%{margin-left: -200%;}
+        100%{margin-left: -200%;}
+    }
+    
+    .foto {
+        padding: 0 11rem;
+    }
+    
+    .foto img {
+        height: 200px;
+    }
+
+    .title_hoja-vida h5 {
+        font-size: 20px;
+    }
+    
+    .cont_text h5 {
+        font-size: 16px;
+    }
+
+    .cont_int .cont_text p {
+        font-size: 18px;
+    }
+
+    .contenido .cont_text-hj2 p {
+        font-size: 16px;
+    }
+
+    /**--Footer--**/
+    .cont__footer .footer__group1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+
+    .cont__footer .footer__group1 .box__footer img {
+        width: 100px;
+    }
+
+    .cont__footer .footer__group1 .box__footer h2 {
+        color: #FFFF;
+        margin-bottom: 25px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .cont__footer .footer__group1 .box__footer p {
+        color: #efefef;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .cont__footer .footer__group1 .Red-Social__footer {
+        text-align: center;
+    }
+}
+
